@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+@media (max-width:800px){
+    .pricing-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.pricing-plan {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-plan h2 {
+    margin: 0;
+    color: #333;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.check {
+    color: #4caf50;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.signup-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}
+
+.basic {
+    border-left: 5px solid #2196f3;}
+.standard {
+    border-left: 5px solid #4caf50; 
+}
+
+.premium {
+    border-left: 5px solid #f44336;
+}
+
+.popular {
+    border: 2px solid #f44336;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
